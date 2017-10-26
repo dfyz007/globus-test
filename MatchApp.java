@@ -3,34 +3,34 @@ import javafx.css.Match;
 import java.util.Scanner;
 
 public class MatchApp {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        double FirstNumber;
-        double SecondNumber;
-        String MatchOperation;
+        double firstNumber;
+        double secondNumber;
+        String matchOperation;
 
         System.out.print("Введите выражение для вычисления (например: 8 / 4):");
 
-        FirstNumber = in.nextDouble();
-        MatchOperation = in.next();
-        SecondNumber = in.nextDouble();
+        firstNumber = in.nextDouble();
+        matchOperation = in.next();
+        secondNumber = in.nextDouble();
 
-        switch(MatchOperation) {
+        switch (matchOperation) {
             case "+":
-                System.out.println("Результат вычисления:" + (FirstNumber + SecondNumber));
+                System.out.println("Результат вычисления:" + (firstNumber + secondNumber));
                 break;
             case "-":
-                System.out.println("Результат вычисления:" + (FirstNumber - SecondNumber));
+                System.out.println("Результат вычисления:" + (firstNumber - secondNumber));
                 break;
             case "*":
-                System.out.println("Результат вычисления:" + (FirstNumber * SecondNumber));
+                System.out.println("Результат вычисления:" + (firstNumber * secondNumber));
                 break;
             case "/":
-                System.out.println("Результат вычисления:" + (FirstNumber / SecondNumber));
+                System.out.println("Результат вычисления:" + (firstNumber / secondNumber));
                 break;
             case "%":
-                System.out.println("Результат вычисления:" + (FirstNumber % SecondNumber));
+                System.out.println("Результат вычисления:" + (firstNumber % secondNumber));
                 break;
 
         }
