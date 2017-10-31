@@ -6,15 +6,11 @@ public class MatchApp {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        double firstNumber;
-        double secondNumber;
-        String matchOperation;
-
         System.out.print("Введите выражение для вычисления (например: 8 / 4):");
 
-        firstNumber = in.nextDouble();
-        matchOperation = in.next();
-        secondNumber = in.nextDouble();
+        double firstNumber = in.nextDouble();
+        String matchOperation = in.next();
+        double secondNumber = in.nextDouble();
 
         switch (matchOperation) {
             case "+":
